@@ -84,6 +84,18 @@ def main(args):
         "data/test"
     )
 
+    register_coco_instances(
+        "doclaynet_train", 
+        {}, 
+        "doclaynet_data/COCO/train.json", 
+        "doclaynet_data/PNG")
+
+    register_coco_instances(
+        "doclaynet_val", 
+        {}, 
+        "doclaynet_data/COCO/val.json", 
+        "doclaynet_data/PNG")
+
     cfg = setup(args)
 
     if args.eval_only:

@@ -1,8 +1,8 @@
 #!/bin/bash
-eval "$(conda shell.bash hook)"
-conda activate wzq_dit
 
 cd `dirname $0`
+eval "$(conda shell.bash hook)"
+conda activate wzq_dit
 
 rm -rf ./wandb
 

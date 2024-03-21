@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd `dirname $0`
+eval "$(conda shell.bash hook)"
+conda activate wzq_dit
+
+
 # select dataset 进行训练
 config_file=doclaynet_configs/cascade/cascade_dit_base.yaml
 pre_train_model=dit_base_patch16_224.pth

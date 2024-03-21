@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd `dirname $0`
+eval "$(conda shell.bash hook)"
+conda activate wzq_dit
+
+
 ############################
 # 进行推理:
 # 输入: image_input文件夹
